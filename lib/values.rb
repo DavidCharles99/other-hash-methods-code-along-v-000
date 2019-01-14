@@ -11,8 +11,9 @@ require 'pry'
 def get_the_values(groceries)
   array = []
   groceries.each do |attribute, values|
-    array << values
-    yield (values)
-  end
-  array
+    values.each do |items|
+      array << items
+    end
+end
+array
 end
