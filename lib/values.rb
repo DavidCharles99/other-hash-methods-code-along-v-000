@@ -14,6 +14,5 @@ def get_the_values(groceries)
     array << values
     yield (values)
   end
-end
   array
 end
