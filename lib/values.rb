@@ -12,6 +12,8 @@ def get_the_values(groceries)
   array = []
   groceries.each do |attribute, values|
     array << values
+    yield (values)
   end
+end
   array
 end
